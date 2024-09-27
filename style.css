@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+#board-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#board-members>div{
+    max-width: 280px;
+    margin: 10px 20px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    /* border-radius: 10px; */
+}
+#board-members img{
+    width: 100%;
+}
+
+
+#investors {
+    text-align: center;
+    margin: 2px 12%;
+}
+
+#investors>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+#investors>div>div {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    align-items: center;
+    padding-top: 6px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 89%, rgb(214, 214, 214) 100%);
+}
+
+#investors img+p {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 1px;
+    margin: 0;
+    color: rgb(49, 49, 49);
+}
+
+.investors-cards p+p {
+    font-size: 12px;
+    padding: 1px;
+    margin: 0;
+    margin-bottom: 3px;
+    color: rgb(77, 77, 77);
+}
+
+.investors-cards>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.investors-cards>p+img {
+    width: 105px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    #investors>div {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media screen and (max-width:767px){
+    #investors>div {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
